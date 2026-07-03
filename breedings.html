@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>ONE DON GAZA BULLIES | Studs</title>
-<link rel="icon" type="image/png" href="assets/hero/logo.png">  
+<title>ONE DON GAZA BULLIES | Breedings</title>
+<link rel="icon" type="image/png" href="assets/hero/logo.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#d6ad2f">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="ODG Bullies">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">  
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -17,10 +17,8 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service-worker.js");
 }
-</script>  
+</script>
 <body>
-
-
 
 <nav class="nav">
   <a class="nav-brand" href="index.html">
@@ -38,7 +36,7 @@ if ("serviceWorker" in navigator) {
 <div class="menu-overlay"></div>
 
 <aside class="menu-panel">
-  <button class="menu-close" onclick="closeMenu()" aria-label="Close menu">×</button>
+  <button class="menu-close" onclick="closeMenu()" aria-label="Close menu">&times;</button>
 
   <div class="menu-title">ONE DON GAZA BULLIES</div>
 
@@ -75,30 +73,18 @@ if ("serviceWorker" in navigator) {
 </aside>
 
 <header class="page-hero">
-  <div class="badge">STUD LINEUP</div>
-  <h1>STUDS</h1>
-  <p class="sub">Available stud presentation for One Don Gaza Bullies.</p>
+  <div class="badge">UPCOMING BREEDINGS</div>
+  <h1>BREEDINGS</h1>
+  <p class="sub">Planned and announced breedings from One Don Gaza Bullies.</p>
 </header>
 
-<section class="dog-section">
-  <div class="dog-list" id="studsList">
-    <div class="dog-card">
-      <div class="dog-img" onclick="openLightbox('black_rhyno',0)">
-        <img src="assets/studs/black_rhyno1.png" alt="ODGB/GB Black Rhyno">
-      </div>
-
-      <div class="dog-info">
-        <h3>ODGB/GB<br>BLACK RHYNO</h3>
-        <div class="lineage">PBK Hellboy × GB Mystic</div>
-
-        <p>
-          Black Rhyno is out of PBK Hellboy and GB Mystic. Compact, powerful and built with the bully expression, bone and structure that represent the direction of the One Don Gaza Bullies breeding program.
-        </p>
-
-        <div class="click-hint">Click image to view full gallery</div>
-
-        <br><br>
-        <a class="btn gold" href="contact.html">Contact For Stud Info</a>
+<section class="productions">
+  <div id="breedingsList" style="display: grid; gap: 70px; max-width: 980px; margin: 0 auto;">
+    <div style="border: 1px solid rgba(214,173,47,.35); background: linear-gradient(145deg,rgba(0,166,81,.16),rgba(0,0,0,.55)); overflow: hidden; text-align: center;">
+      <img src="assets/hero/logo.png" alt="One Don Gaza Bullies" style="width: 100%; max-height: 760px; object-fit: contain; display: block; background: #050505;">
+      <div class="card-content">
+        <h3>COMING SOON</h3>
+        <p>Breedings will be announced here.</p>
       </div>
     </div>
   </div>
@@ -107,18 +93,17 @@ if ("serviceWorker" in navigator) {
 <footer>
   <strong>ONE DON GAZA BULLIES</strong><br>
   Brodheadsville, Pennsylvania<br>
-
 </footer>
 
 <div class="lightbox" id="lightbox">
-  <button class="close" onclick="closeLightbox()">×</button>
-  <button class="arrow left" onclick="prevImage()">‹</button>
+  <button class="close" onclick="closeLightbox()">&times;</button>
+  <button class="arrow left" onclick="prevImage()">&lsaquo;</button>
   <img id="lightboxImg" src="" alt="">
-  <button class="arrow right" onclick="nextImage()">›</button>
+  <button class="arrow right" onclick="nextImage()">&rsaquo;</button>
 </div>
 
 <script src="script.js"></script>
-<script type="module" src="assets/js/public-studs.js"></script>
+<script type="module" src="assets/js/public-breedings.js"></script>
 
 </body>
 </html>

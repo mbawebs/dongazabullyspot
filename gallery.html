@@ -69,6 +69,8 @@ if ("serviceWorker" in navigator) {
 </div>
 </div>
 
+<a href="available.html" onclick="closeMenu()">Available</a>
+<a href="breedings.html" onclick="closeMenu()">Breedings</a>
 <a href="gallery.html" onclick="closeMenu()">Gallery</a>
 
 <a href="contact.html" onclick="closeMenu()">Contact</a>
@@ -85,7 +87,7 @@ A closer look at our dogs, productions and everyday kennel life.
 
 <section class="gallery">
 
-<div class="gallery-grid">
+<div class="gallery-grid" id="galleryList">
 
 <div class="gallery-card" onclick="openLightbox('gallery',0)">
 <img src="assets/gallery/gallery_01.png" alt="Gallery 1">
@@ -121,6 +123,7 @@ Brodheadsville, Pennsylvania<br>
 </div>
 
 <script src="script.js"></script>
+<script type="module" src="assets/js/public-gallery.js"></script>
 
 </body>
 </html>

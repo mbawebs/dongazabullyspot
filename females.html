@@ -68,6 +68,8 @@ if ("serviceWorker" in navigator) {
 </div>
 </div>
 
+<a href="available.html" onclick="closeMenu()">Available</a>
+<a href="breedings.html" onclick="closeMenu()">Breedings</a>
 <a href="gallery.html" onclick="closeMenu()">Gallery</a>
 <a href="contact.html" onclick="closeMenu()">Contact</a>
 
@@ -83,7 +85,7 @@ Females and future producers representing the kennel foundation.
 
 <section class="dog-section alt">
 
-<div class="dog-list">
+<div class="dog-list" id="femalesList">
 
 <div class="dog-card">
 
@@ -158,6 +160,7 @@ Brodheadsville, Pennsylvania<br>
 </div>
 
 <script src="script.js"></script>
+<script type="module" src="assets/js/public-females.js"></script>
 
 </body>
 </html>

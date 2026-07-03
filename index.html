@@ -38,6 +38,8 @@
   <div class="menu-group"><a href="studs.html" onclick="closeMenu()">Studs</a><div class="submenu"><a href="studs.html" onclick="closeMenu()">Black Rhyno</a></div></div>
   <div class="menu-group"><a href="females.html" onclick="closeMenu()">Females</a><div class="submenu"><a href="females.html" onclick="closeMenu()">GB Mystic</a><a href="females.html" onclick="closeMenu()">VMB Celine</a></div></div>
   <div class="menu-group"><a href="productions.html" onclick="closeMenu()">Productions</a><div class="submenu"><a href="productions.html" onclick="closeMenu()">Diplomat</a><a href="productions.html" onclick="closeMenu()">Wizard</a><a href="productions.html" onclick="closeMenu()">Spice</a></div></div>
+  <a href="available.html" onclick="closeMenu()">Available</a>
+  <a href="breedings.html" onclick="closeMenu()">Breedings</a>
   <a href="gallery.html" onclick="closeMenu()">Gallery</a>
   <a href="contact.html" onclick="closeMenu()">Contact</a>
 </aside>
@@ -67,7 +69,7 @@
 
 <section class="dog-section">
   <h2 class="title">FEATURED STUD</h2>
-  <div class="dog-list">
+  <div class="dog-list" id="homeFeaturedStud">
     <div class="dog-card">
       <div class="dog-img" onclick="openLightbox('black_rhyno',0)">
         <img src="assets/studs/black_rhyno1.png" alt="Black Rhyno">
@@ -85,7 +87,7 @@
 
 <section class="dog-section alt">
   <h2 class="title">FEATURED FEMALE</h2>
-  <div class="dog-list">
+  <div class="dog-list" id="homeFeaturedFemale">
     <div class="dog-card reverse">
       <div class="dog-img" onclick="openLightbox('mystic',0)">
         <img src="assets/females/mystic_01.png" alt="GB Mystic">
@@ -104,7 +106,7 @@
 <section class="productions">
   <h2 class="title">LATEST PRODUCTIONS</h2>
   <p class="sub">Young prospects and productions from the program.</p>
-  <div class="cards">
+  <div class="cards" id="homeLatestProductions">
     <div class="card">
       <img src="assets/productions/diplomat.png" alt="Diplomat">
       <div class="card-content">
@@ -167,6 +169,7 @@ if ("serviceWorker" in navigator) {
 }
 </script>
 <script src="script.js"></script>
+<script type="module" src="assets/js/public-home.js"></script>
 
 </body>
 </html>
